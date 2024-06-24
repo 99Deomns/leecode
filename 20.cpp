@@ -29,8 +29,6 @@ public:
             else sta.pop();
         }
         return sta.empty();
-
-        
     }
 
 };
