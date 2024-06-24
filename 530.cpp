@@ -67,7 +67,38 @@ public:
     }
 
 };
+class Solution1 {
+public:
+    //进行中序遍历，使得遍历的元素从小到大
+    
+    
+    int getMinimumDifference(TreeNode* root) {
+        int res = INT_MAX;
+        TreeNode* pre = nullptr;
+        TreeNode* cur = root;
+        stack<TreeNode*> st;
+        if (cur) st.push(cur);
+        while (!st.empty()) {
+            cur = st.top();
+            if (cur) {
+                st.pop();
+                if (cur->right) st.push(cur->right);
+                st.push(cur);
+                st.push(nullptr);
+                if (cur->left) st.push(cur->left);
+            }
+            else {
+                st.pop();
+                cur = st.top();
+                st.pop();
+                if (pre) res = min(res, cur->val - pre->val);
+                pre = cur;
+            }
+        }
+        return res;
+    }
 
+};
 int main()
 {
 
