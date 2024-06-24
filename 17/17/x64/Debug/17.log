@@ -1,0 +1,7 @@
+﻿  main.c
+H:\Desktop\Cpp_pro\17\17\main.c(24,23): warning C4047: “<”:“int”与“int *”的间接级别不同
+H:\Desktop\Cpp_pro\17\17\main.c(30,27): warning C4047: “<”:“int”与“int *”的间接级别不同
+H:\Desktop\Cpp_pro\17\17\main.c(11,13): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+H:\Desktop\Cpp_pro\17\17\main.c(40,12): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+H:\Desktop\Cpp_pro\17\17\main.c(40,12): warning C4313: "printf": 格式字符串中的 "%d" 与类型为 "int *" 的参数 1 冲突
+  17.vcxproj -> H:\Desktop\Cpp_pro\17\x64\Debug\17.exe

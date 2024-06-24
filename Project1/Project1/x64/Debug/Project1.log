@@ -1,0 +1,3 @@
+﻿  money.cpp
+H:\Desktop\Cpp_pro\Project1\Project1\money.cpp(26,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Project1.vcxproj -> H:\Desktop\Cpp_pro\Project1\x64\Debug\Project1.exe

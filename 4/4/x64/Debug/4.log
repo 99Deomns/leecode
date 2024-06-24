@@ -1,0 +1,7 @@
+﻿  Solution.cpp
+H:\Desktop\Cpp_pro\4\4\Solution.cpp(5,14): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+H:\Desktop\Cpp_pro\4\4\Solution.cpp(5,35): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+H:\Desktop\Cpp_pro\4\4\Solution.cpp(35,13): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  main.cpp
+  正在生成代码...
+  4.vcxproj -> H:\Desktop\Cpp_pro\4\x64\Debug\4.exe
