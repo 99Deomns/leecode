@@ -1,4 +1,0 @@
-﻿  main.c
-H:\Desktop\Cpp_pro\Project2\Project2\main.c(5,11): warning C4305: “初始化”: 从“double”到“float”截断
-H:\Desktop\Cpp_pro\Project2\Project2\main.c(7,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Project2.vcxproj -> H:\Desktop\Cpp_pro\Project2\x64\Debug\Project2.exe
