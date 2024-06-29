@@ -56,28 +56,28 @@ bool static cmp(const pair<int, int>& a, const pair<int, int>& b) {
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if (root == p || root == q || !root) return root;
-        TreeNode* left = lowestCommonAncestor(root->left, p, q);
-        TreeNode* right = lowestCommonAncestor(root->right, p, q);
-        if (left && right) return root;
-        if (!left && right) return right;
-        else if (left && !right)return left;
-        else {
-            return NULL;
+        TreeNode* node = root;
+        while (node) {
+            if (p->val <= node->val && node->val <= q->val) {//这两行if可以归为else直接返回结果；
+                return node;
+            }
+            else if (p->val >= node->val && node->val >= q->val) {
+                return node;
+            }
+            else if (q->val < node->val && p->val < node->val) {
+                node = node->left;
+            }
+            else if (p->val > node->val && q->val > node->val) {
+                node = node->right;
+            }
         }
+        return nullptr;
     }
 };
-//TreeNode* Create_Tree(vector<int>& l_nums, int i) //层次遍历创建二叉树
-//{
-//    if (i >= l_nums.size() || l_nums[i] == 0) //数值为0或超出数组范围
-//        return nullptr;
-//    TreeNode* root = new TreeNode(l_nums[i]);
-//    root->left = Create_Tree(l_nums, i * 2);
-//    root->right = Create_Tree(l_nums, i * 2 + 1);
-//    return root;
-//}
+
 int main()
 {
-
+    
+    cout << endl;
     return 0;
 }
